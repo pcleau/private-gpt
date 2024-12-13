@@ -1,0 +1,9 @@
+
+llm:
+  mode: ollama
+  prompt_style: "mistral"
+  max_new_tokens: ${PGPT_OLLAMA_MIXTRAL_MAX_NEW_TOKEN:4096}
+  context_window: ${PGPT_OLLAMA_MIXTRAL_CONTEXT_WINDOW:32678}
+
+ollama:
+  llm_model: ${PGPT_OLLAMA_MIXTRAL_MODEL:mixtral:8x7b-instruct-v0.1-q5_K_M}
